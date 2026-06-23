@@ -1,0 +1,51 @@
+name: invisafe
+description: Invisafe - Multi-Modal Vision Intelligence Platform (unified app integrating Structural, Food, Skin, Air Quality, Road and Pipeline modules).
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI / fonts / animation
+  google_fonts: ^8.1.0
+  flutter_svg: ^2.0.9
+  animate_do: ^5.1.0
+
+  # Camera + permissions (standardized camera pipeline)
+  camera: ^0.12.0+1
+  permission_handler: ^12.0.3
+
+  # Charts for report screens (road / pipeline / air quality)
+  fl_chart: ^1.2.0
+
+  # Report generation + sharing (standardized report pipeline)
+  pdf: ^3.10.8
+  printing: ^5.12.0
+  path_provider: ^2.1.2
+  share_plus: ^13.1.0
+
+  # 3D / AR model rendering (pipeline module, with graceful fallback)
+  model_viewer_plus: ^1.7.2
+
+  # Demo media playback (road / pipeline)
+  video_player: ^2.8.3
+
+  # Lightweight on-device image heuristics (structural / skin analysis)
+  image: ^4.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/models/
